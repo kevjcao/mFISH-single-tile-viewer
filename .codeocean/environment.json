@@ -1,0 +1,44 @@
+{
+	"version": 1,
+	"base_image": "codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04",
+	"options": {
+		"registry_host_arg": true,
+		"git_ask_pass": true
+	},
+	"installers": {
+		"pip3": {
+			"packages": [
+				{
+					"name": "dask-image",
+					"version": "2024.5.3"
+				},
+				{
+					"name": "ipython",
+					"version": "8.18.1"
+				},
+				{
+					"name": "ipywidgets",
+					"version": "8.1.5"
+				},
+				{
+					"name": "matplotlib",
+					"version": "3.9.4"
+				},
+				{
+					"name": "numpy",
+					"version": "2.0.2"
+				},
+				{
+					"name": "plotly",
+					"version": "6.0.1"
+				},
+				{
+					"name": "zarr",
+					"version": "2.16.0"
+				}
+			],
+			"options": {},
+			"pre_install_options": {}
+		}
+	}
+}
